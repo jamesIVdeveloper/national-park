@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Park API</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Find National Parks</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Find National Parks</h1>
     <form action="">
-        <label for="js-state-search" >Enter State Abbreviation (e.g. KS for Kansas):</label>
-        <input type="text" id='js-state-search' class='state-search'>
+      <label for="js-state-search"
+        >Enter State Abbreviation (e.g. KS for Kansas)</label
+      >
+      <input
+        type="text"
+        id="js-state-search"
+        class="state-search"
+        placeholder="KS"
+      />
 
-        <label for="js-number-results">Select number of parks:</label>
-        <input type="number" name="number-results" id="js-number-results" value='10'>
-        <input type="submit" value='Search'>
+      <label for="js-number-results">Select number of parks</label>
+      <input
+        type="number"
+        name="number-results"
+        id="js-number-results"
+        value="10"
+      />
+      <input type="submit" value="Search" />
     </form>
 
-    <p id='js-error-message' class='error-message'></p>
+    <p id="js-error-message" class="error-message"></p>
 
-    <section id='results' class='hidden'>
-        <h2>Results</h2>
-        <ul id='results-list'></ul>
+    <section id="results" class="hidden">
+      <h2>Results</h2>
+      <ul id="results-list"></ul>
     </section>
 
     <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.js"
-    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-    crossorigin="anonymous"></script>
-    <script src='index.js'></script>
-</body>
+      src="https://code.jquery.com/jquery-3.5.1.slim.js"
+      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
