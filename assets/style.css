@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body */
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-image: url("../assets/imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  font-family: monospace, "Courier New", Courier;
+}
+
+#background-img {
+  z-index: -1;
+}
+
+#title {
+  color: white;
+  text-shadow: 2px 2px 5px darkgreen;
+  backdrop-filter: blur(2px);
+}
+
+/* form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 10%;
+  color: white;
+  text-shadow: 2px 2px 5px darkgreen;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+}
+
+input,
+label {
+  margin: 5px;
+}
+
+input {
+  width: 25%;
+  margin: 5px 37.5%;
+}
+
+#search-btn {
+  background-color: darkgreen;
+  color: white;
+  border-radius: 10px;
+  margin: 5px 40%;
+  padding: 5px;
+  width: 20%;
+}
+
+#search-btn:hover {
+  cursor: pointer;
+  color: darkgreen;
+  background-color: white;
+}
+
+/* results */
+
+#results {
+  margin: auto 5% auto 5%;
+}
+
+#title {
+  text-align: center;
+}
+
+#results-title {
+  text-align: center;
+}
+
+#results-title span {
+  color: white;
+  padding: 5px;
+  text-shadow: 2px 2px 5px darkgreen;
+  backdrop-filter: blur(10px);
+}
+
+#results-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding: 0 10px 20px 10px;
+  margin: 10px;
+  color: white;
+  backdrop-filter: blur(10px);
+  text-shadow: 2px 2px 5px darkgreen;
+}
+
+#park-link {
+  text-decoration: none;
+}
+
+#park-link span {
+  background-color: darkgreen;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#park-link span:hover {
+  color: darkgreen;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  #title {
+    font-size: 50px;
+  }
+
+  form {
+    margin: 0 20%;
+  }
+
+  label,
+  input {
+    font-size: 20px;
+  }
+
+  #search-btn {
+    font-size: 30px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
